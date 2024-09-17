@@ -6,6 +6,8 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Элементы решения", "Элементы решения", "{3789942F-0021-450D-98A9-BD4746D662EC}"
 	ProjectSection(SolutionItems) = preProject
 		index.html = index.html
+		scripts\main.js = scripts\main.js
+		styles\style.css = styles\style.css
 	EndProjectSection
 EndProject
 Global
