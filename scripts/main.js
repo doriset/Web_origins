@@ -1,9 +1,9 @@
-var myImg = document.querySelector("img");
-var myButton = document.querySelector("button");
-var myHead = document.querySelector("h1");
+let myImg = document.querySelector("img");
+let myButton = document.querySelector("button");
+let myHead = document.querySelector("h1");
 
 function setUserName() {
-    var myName = prompt("Please enter your name.");
+    let myName = prompt("Please enter your name.");
     localStorage.setItem("name", myName);
     myHead.textContent = "Cat's is cool, " + myName;
 }
@@ -12,7 +12,7 @@ if (!localStorage.getItem("name") || localStorage.getItem("name") === "null") {
     setUserName();
 }
 else {
-    var storedName = localStorage.getItem("name");
+    let storedName = localStorage.getItem("name");
     myHead.textContent = "Cat's is cool, " + storedName;
 }
 
@@ -22,7 +22,7 @@ myButton.onclick = function () {
 
 myImg.onclick = function () {
     alert("Mrrrrrrrrrr");
-    var mySrc = myImg.getAttribute("src");
+    let mySrc = myImg.getAttribute("src");
     if (mySrc === "images/cute_cat.jfif") {
         myImg.setAttribute("src", "images/cute_cat2.jpg");
     }
@@ -33,4 +33,3 @@ myImg.onclick = function () {
         myImg.setAttribute("src", "images/cute_cat.jfif");
     }
 }
-
